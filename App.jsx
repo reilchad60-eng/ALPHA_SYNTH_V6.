@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Zap, Copy, Check, Play, Square, Cpu, MessageSquare, Send, ShieldAlert, Globe, Terminal } from 'lucide-react';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 export default function App() {
   const brand = "ALPHA_SYNTH";
