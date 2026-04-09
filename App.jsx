@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Zap, Copy, Check, Play, Square, Cpu, MessageSquare, Send, ShieldAlert, Globe, Terminal } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const brand = "ALPHA_SYNTH";
@@ -139,6 +140,7 @@ export default function App() {
       <footer className="mt-6 mb-4 opacity-30 text-[8px] font-black uppercase tracking-widest flex items-center gap-2">
         <Globe size={10}/> {developer}_NETWORK_V6
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
